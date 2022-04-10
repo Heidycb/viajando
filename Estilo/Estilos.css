@@ -116,10 +116,16 @@ body {
     /*display: flex;*/
     padding-bottom: 2px;
     animation-name: un_efecto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes un_efecto{
-     
+    0%{transform: translateX(18px);}
+    25%{transform: translateX(15px);}
+    50%{transform: translateX(18px);}
+    100%{transform: translateX(0px);}
 }
 
 .info p {
