@@ -28,7 +28,7 @@ body {
 
 
 .menu {
-    background-color: #E74C3C;
+    background-image: linear-gradient(to right, #530404,#c10404);
     width: 100%;
     text-align: right;
     padding: 0px 10px;
@@ -38,10 +38,9 @@ body {
 .menu li {
     display: inline-block;
     position: relative;
-    color: white;
+    color: black;
     list-style-type: none;
     /*Oculta la sublista*/
-    color: black;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -50,7 +49,7 @@ body {
 .menu li a {
     text-decoration: none;
     /*Oculta las lineas de la lista*/
-    color: black;
+    color: white;
 }
 
 .submenu {
@@ -62,11 +61,11 @@ body {
 .submenu li {
     display: block;
     /* Para que se comporte como un elemto de bloque*/
-    background-color: #E74C3C;
+    background-image: linear-gradient(to right, #530404,#c10404);
 }
 
 .menu li:hover {
-    background-color: white;
+    background-color: black;
 }
 
 .menu li:hover .submenu {
@@ -110,12 +109,17 @@ body {
     /*ancho*/
     height: 200px;
     /*alto*/
-    border-radius: 0%;
+    border-radius: 50%;
     /*Aplica bordes a la img*/
     object-fit: cover;
     /*Centrar la img*/
     /*display: flex;*/
     padding-bottom: 2px;
+    animation-name: un_efecto;
+}
+
+@keyframes un_efecto{
+     
 }
 
 .info p {
@@ -162,6 +166,13 @@ grid-area: agencias;
     width: 200px;
     height: 150px;
     padding-bottom: 10px; 
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.galeria img:hover {
+    filter:none;
+    transform: rotatey(100deg);
 }
 
 /*-----------COSTA----------------*/
@@ -248,8 +259,9 @@ textarea {
 /*------------FOOTER---------*/
 .footer {
    /* margin-top: 40px;*/
-    background-color: #E74C3C;
+    background-image: linear-gradient(to right, #530404,#c10404);
     padding: 10px;
+    color: #EBF5FB;
     text-align: center;
     bottom: 0;
     width: 100%;
